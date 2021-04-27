@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>SIGN-Up</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="validate_signup.js"></script>
+    </head>
+    <body>
+        <div class="top">
+            <img src="logo.png" height=160 width=160 >
+        </div>
+        <div class="navigation">
+            <center>
+            <table class='tabl'>
+                <tr>
+                    <td class="nvtd"><a href="signup.html" style='text-decoration:none;color:black;'>Home</a></td>
+                </tr>
+                <tr>
+                    <td class="nvtd">Notice</td>
+                </tr>
+                <tr>
+                    <td class="nvtd">What's New</td>
+                </tr>
+                <tr>
+                    <td class="nvtd">Contact</td>
+                </tr>
+            </table>
+            </center>
+        </div>
+        <div class="content">
+            <form action="signup_database" onsubmit="return validate(this)">
+                <table>
+                    <tr>
+                        <td class="td">First Name:</td>
+                        <td ><input type="text" name="data1" placeholder="First Name" class="tdu"></td>
+                     </tr>
+                    <tr>
+                        <td class="td">Last Name:</td>
+                        <td ><input type="text" name="data2" placeholder="Last Name" class="tdu"></td>
+                    </tr>
+                    <tr>
+                        <td class="td">email:</td>
+                        <td ><input type="email" name="data3" placeholder="Email" class="tdu"></td>
+                    </tr>
+                    <tr>
+                        <td class="td">Password:</td>
+                        <td ><input type="password" name="data4" placeholder="Password" class="tdu"></td>
+                    </tr>
+                    <tr>
+                        <td class="td">Re-type Password:</td>
+                        <td ><input type="password" name="data5" placeholder="Password" class="tdu"></td>
+                    </tr>
+                    <tr>
+                        <td class="td">Gender:</td>
+                        <td ><input type="radio" name="data6" value="Male" checked> Male</td>
+                        <td ><input type="radio" name="data6" value="Female"> Female</td>
+                    </tr>
+                    <tr>
+                        <td class="td">Country</td>
+                        <td> <select class="tdu" name='data7'>
+                                <option >India</option>
+                                <option >USA</option>
+                                <option >France</option>
+                                <option >Switzerland</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style='align-items: left;'><input type='submit' value='SUBMIT' class='tdu'></td>
+                        <td><a href='login.html'>Registered User</a></td>
+                    </tr>
+                     <tr>
+                        <td colspan="2">
+                            <span id="err" style="color:red;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

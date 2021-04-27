@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>OTP</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="validate_signup.js"></script>
+    </head>
+    <body>
+        <div class="top">
+            <img src="logo.png" height=160 width=160 >
+        </div>
+        <div class="navigation">
+            <center>
+            <table class='tabl'>
+                <tr>
+                    <td class="nvtd">Home</td>
+                </tr>
+                <tr>
+                    <td class="nvtd">Downloads</td>
+                </tr>
+                <tr>
+                    <td class="nvtd">Notice</td>
+                </tr>
+                <tr>
+                    <td class="nvtd">What's New</td>
+                </tr>
+                <tr>
+                    <td class="nvtd">Contact</td>
+                </tr>
+            </table>
+            </center>
+        </div>
+        <div class="content">
+           <h2>OTP has been sent to Registered Email-Id</h2>
+            <form action="otp" onsubmit="return validate(this)">
+                <table>
+                    <tr>
+                        <td class="td">Email:</td>
+                        <td ><input type="email" name="email" placeholder="Email" class="tdu"></td>
+                    </tr>
+                    <tr>
+                        <td class="td">OTP:</td>
+                        <td ><input type="number" name="otp" placeholder="OTP" class="tdu"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class='td'><input type='submit' value='SUBMIT' class='tdu'></td>
+                    </tr>
+                     <tr>
+                        <td colspan="2">
+                            <span id="err" style="color:red;">Either Email<br> or OTP is Incorrect<br> Or you are not registered</span>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

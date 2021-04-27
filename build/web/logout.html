@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Log Out</title>
+        <meta charset="UTF-8">
+        <script>
+            function redir()
+            {
+                window.location='login.html';
+            }
+            function call()
+            {
+                setTimeout(redir,10000);
+            }
+            
+        </script>
+    </head>
+    <body onload="call()" onpageshow="javascript:window.history.forward();">
+    <center>
+        <img src="logout.png" width="300" height="300"><br>
+        <span style="color: green;font-size: 25px;">Please wait while logging out....</span>
+    </center>
+    </body>
+</html>
